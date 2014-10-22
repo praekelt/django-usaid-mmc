@@ -5,5 +5,4 @@ raven
 dj-database-url
 psycopg2
 django-debug-toolbar
-# django-messaging-subscription
-git+https://github.com/westerncapelabs/django-messaging-subscription.git@feature/issue-1-initial-skeleton-and-tests
+django-messaging-subscription
