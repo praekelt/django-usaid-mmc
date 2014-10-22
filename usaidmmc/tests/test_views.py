@@ -16,7 +16,7 @@ class SubscriptionViewTests(ResourceTestCase):
     def test_top_level(self):
         auth = self.create_apikey(self.user.username, self.api_key.key)
         response = self.api_client.get(
-            '/subscription/api/v1/subscription/useraccount/',
+            '/subscription/api/v1/subscription/subscription/',
             format='json', authentication=auth)
         self.assertEqual(response.status_code, 200)
         data = self.deserialize(response)

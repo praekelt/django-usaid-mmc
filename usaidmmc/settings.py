@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     'raven.contrib.django.raven_compat',
     'debug_toolbar',
     'subscription',
+    'djcelery',
     'tastypie',  # needed by subscription
 )
 
