@@ -11,12 +11,13 @@ class SubscriptionViewTests(ResourceTestCase):
         super(SubscriptionViewTests, self).setUp()
         self.user = get_user_model().objects.create_user(
             username='test', email='test@example.com', password='test_pw')
-        self.api_key = ApiKey.objects.create(user=self.user)
+        api_obj = ApiKey.objects.get(user=self.user) 
+        self.api_key = api_obj.key
 
     def test_top_level(self):
-        auth = self.create_apikey(self.user.username, self.api_key.key)
+        auth = self.create_apikey(self.user.username, self.api_key)
         response = self.api_client.get(
-            '/subscription/api/v1/subscription/subscription/',
+            '/subscription/api/v1/subscription/',
             format='json', authentication=auth)
         self.assertEqual(response.status_code, 200)
         data = self.deserialize(response)
