@@ -11,7 +11,7 @@ class SubscriptionViewTests(ResourceTestCase):
         super(SubscriptionViewTests, self).setUp()
         self.user = get_user_model().objects.create_user(
             username='test', email='test@example.com', password='test_pw')
-        api_obj = ApiKey.objects.get(user=self.user) 
+        api_obj = ApiKey.objects.get(user=self.user)
         self.api_key = api_obj.key
 
     def test_top_level(self):
