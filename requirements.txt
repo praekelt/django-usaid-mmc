@@ -6,3 +6,4 @@ dj-database-url
 psycopg2
 django-debug-toolbar
 django-messaging-subscription
+django_nose
