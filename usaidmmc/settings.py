@@ -130,7 +130,6 @@ INSTALLED_APPS = (
     'gunicorn',
     'django_nose',
     'raven.contrib.django.raven_compat',
-    'debug_toolbar',
     'subscription',
     'djcelery',
     'tastypie',  # needed by subscription
