@@ -10,4 +10,7 @@ urlpatterns = patterns(
     # TastyPie breaks if a namespace is set. See
     # https://github.com/toastdriven/django-tastypie/issues/24
     url(r'^subscription/', include('subscription.urls')),
+    url(r'^admin/subscription/upload/',
+                           'subscription.views.uploader',
+                           {'page_name': 'csv_uploader'}, name="csv_uploader"),
 )
