@@ -5,7 +5,7 @@ raven
 dj-database-url
 psycopg2
 django-debug-toolbar
-django-messaging-subscription==0.2.1
+django-messaging-subscription==0.3.1
 django_nose
 redis
 sqlalchemy
