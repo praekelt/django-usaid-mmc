@@ -1,11 +1,11 @@
 Django<1.7
 South
 gunicorn
-raven
+raven==5.1.1
 dj-database-url
 psycopg2
 django-debug-toolbar
-django-messaging-subscription==0.7.0
+django-messaging-subscription==0.7.1
 django_nose
 redis
 sqlalchemy
