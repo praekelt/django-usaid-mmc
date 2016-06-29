@@ -206,6 +206,8 @@ RAVEN_CONFIG = {
     # 'dsn': 'http://public:secret@example.com/1',
 }
 
+SUBSCRIPTION_NOOP_KEYWORD = "SKIPSEND"
+
 try:
     from local_settings import *  # flake8: noqa
 except ImportError:
